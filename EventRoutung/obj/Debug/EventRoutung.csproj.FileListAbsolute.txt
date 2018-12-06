@@ -1,0 +1,15 @@
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\bin\Debug\EventRoutung.exe.config
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\bin\Debug\EventRoutung.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\bin\Debug\EventRoutung.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung.csprojAssemblyReference.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\MainWindow.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\App.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung_MarkupCompile.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung_MarkupCompile.lref
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\MainWindow.baml
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung.g.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung.Properties.Resources.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung.csproj.GenerateResource.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung.csproj.CoreCompileInputs.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\EventRoutung\obj\Debug\EventRoutung.pdb

@@ -1,0 +1,113 @@
+﻿<Window x:Class="Container.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Container"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="642.285" Width="474.777">
+    <!--In WPF können verschiedene Container mit unterschiedlichem Verhalten zum Layouting verwendet werden, um Controls anzuordnen-->
+    <ScrollViewer VerticalScrollBarVisibility="Visible"
+                  HorizontalScrollBarVisibility="Auto">
+        <!--Der ScrollViewer zweigt automatisch eine ScrollBar an, wenn der Content des ScrollViewers im Fenster nicht mehr vollständig
+        sichtbar ist-->
+        <StackPanel>
+            <!--Ein Canvas bietet seinem Content absolute Positions-Koordinaten an, an welchem die Objekte festgemacht werden-->
+            <!--Über die AttachedProperties Canvas.Left und Canvas.Top (Props des Canvas, welche sich aber auf die Content-Elemente beziehen)
+                kann die Position der Elemenete im Canvas definiert werden-->
+            <Canvas Height="200">
+                <Button Content="Hallo"
+                    Canvas.Left="50"
+                    Canvas.Top="100"
+                    Margin="20"
+                    Panel.ZIndex="1"/>
+
+                <Rectangle Height="50"
+                       Width="50"
+                       Fill="Blue"
+                       Canvas.Left="50"
+                       Canvas.Top="100"/>
+            </Canvas>
+
+            <!--StackPanels 'stapeln' die beinhaltenden Elemente je nach Orientierung, wobei sie in dieser Richtung den Elementen eine minimale
+                Ausdehnung gestatten, in der anderen Richtung aber eine Maximale-->
+            <StackPanel Orientation="Horizontal"
+                    Height="50">
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+            </StackPanel>
+
+            <!--WrapPanels agieren ähnlich wie StackPanels, verschieben jedoch die Elemente, wenn diese in einem Fenster nicht mehr sichtbar sind-->
+            <WrapPanel>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+                <Button Content="button"/>
+            </WrapPanel>
+
+            <!--In DockPanels können Elemente über die AttachedProperty DockPanel.Dock einer Seite zugewiesen werden.
+                Nicht zugewiesene Elemente teilen sich den verbleibenden Platz. Die Ausrichtung der Elemente orientiert
+                sich zudem an der Zuweisungsreihenfolge-->
+            <DockPanel Height="100" LastChildFill="True">
+                <Button Content="ButtonLeft"
+                    DockPanel.Dock="Left"/>
+                <Button Content="ButtonTop"
+                    DockPanel.Dock="Top"/>
+                <Button Content="ButtonRight"
+                    DockPanel.Dock="Right"/>
+                <Button Content="ButtonBottom"
+                    DockPanel.Dock="Bottom"/>
+
+                <Button Content="ButtonMitte"/>
+
+            </DockPanel>
+
+            <!--In Grids müssen Spalten und Zeilen zunächst definiert werden, bevor den Elementen über Grid.Row
+                    und Grid.Column eine Zelle zugeordnet wird.-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <!--In den GridDefinitions können Spalten und Zeilen Breite/Höhe zugewiesen werden.
+                        Auto    = Minimaler Platz des gröten Elements der jeweiligen Spalte/Zeile
+                        *       = verbleibender Platz-->
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Button/>
+                <Button Grid.Column="1"
+                    Grid.Row="0"
+                    Grid.RowSpan="2"/>
+                <Button Grid.Column="3"
+                    Content="Button"/>
+            </Grid>
+
+            <!--Border sind grafische Elemente mit einer Content-Eigenschaft-->
+            <Border BorderThickness="5"
+                BorderBrush="DeepPink"
+                Padding="10"
+                Margin="10">
+                <!--ViewBoxen bieten wie Images die Stretch-Property an, wodurch die Präsentation des Inhakts manipuliert werden kann-->
+                <Viewbox Height="100"
+                 Stretch="Fill">
+                    <Button Content="Hallo"
+                    Height="100"/>
+                </Viewbox>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

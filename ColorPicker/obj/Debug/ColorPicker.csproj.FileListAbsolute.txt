@@ -1,0 +1,14 @@
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\bin\Debug\ColorPicker.dll
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\bin\Debug\ColorPicker.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker.csprojAssemblyReference.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\UserControl1.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker_MarkupCompile.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker_MarkupCompile.lref
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\UserControl1.baml
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker.g.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker.Properties.Resources.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker.csproj.GenerateResource.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker.csproj.CoreCompileInputs.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker.dll
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\ColorPicker\obj\Debug\ColorPicker.pdb

@@ -1,0 +1,20 @@
+﻿<Window x:Class="EventRoutung.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EventRoutung"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="594.807" Width="800">
+    <!--RoutedEvents, wie PreviewMouseDown/MouseDown werden durch den kompletten Logic-Tree des XAML-Codes gereicht
+    und können auf jeder Ebene abgefangen und bearbeitet werden. Preview-Events werden von oben nach unten gereicht,
+    dann wird das entsprechende Element-Event geworfen, danach wird das Nicht-Preview-Event nach oben gereicht.-->
+    <StackPanel x:Name="Blau" Background="Blue" PreviewMouseLeftButtonDown="SP_PreviewMouseLeftButtonDown" MouseLeftButtonDown="SP_MouseLeftButtonDown">
+        <StackPanel x:Name="Grün" Background="Green" Height="300" Margin="30" PreviewMouseLeftButtonDown="SP_PreviewMouseLeftButtonDown" MouseLeftButtonDown="SP_MouseLeftButtonDown">
+            <StackPanel x:Name="Gelb" Background="Yellow" Margin="50" Height="150" PreviewMouseLeftButtonDown="SP_PreviewMouseLeftButtonDown" MouseLeftButtonDown="SP_MouseLeftButtonDown">
+                <StackPanel x:Name="Rot" Background="Red" Margin="10" Height="50" PreviewMouseLeftButtonDown="SP_PreviewMouseLeftButtonDown" MouseLeftButtonDown="SP_MouseLeftButtonDown"/>
+            </StackPanel>
+        </StackPanel>
+        <TextBlock x:Name="TextBl" Height="200" Background="White"/>
+    </StackPanel>
+</Window>

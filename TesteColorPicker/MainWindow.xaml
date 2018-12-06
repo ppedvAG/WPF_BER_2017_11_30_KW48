@@ -1,0 +1,14 @@
+﻿<Window x:Class="TesteColorPicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cp="clr-namespace:ColorPicker;assembly=ColorPicker"
+        xmlns:local="clr-namespace:TesteColorPicker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="327.81" Width="368.876"
+        x:Name="wndMain" Background="{Binding ElementName=cpColor, Path=PickedColor, UpdateSourceTrigger=PropertyChanged}">
+    <StackPanel x:Name="grdMain">
+        <cp:UserControl1 x:Name="cpColor"/>
+    </StackPanel>
+</Window>

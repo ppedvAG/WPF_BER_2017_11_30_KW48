@@ -1,0 +1,27 @@
+﻿<Window x:Class="NeuePersonenDialog.PersonenDB"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NeuePersonenDialog"
+        mc:Ignorable="d"
+        Title="PersonenDB" Height="356.891" Width="554.977">
+    <DockPanel Margin="5">
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
+            <Button Content="Neue Person" x:Name="btnNeu" Click="btnNeu_Click"/>
+            <Button Content="Person ändern" x:Name="btnÄndern" Click="btnÄndern_Click"/>
+            <Button Content="Person löschen" x:Name="btnLöschen" Click="btnLöschen_Click"/>
+        </WrapPanel>
+        <DataGrid AutoGenerateColumns="False" x:Name="dgdPersonen"
+                  IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Vorname" Binding="{Binding Vorname}"/>
+                <DataGridTextColumn Header="Nachname" Binding="{Binding Nachname}"/>
+                <DataGridTextColumn Header="Geschlecht" Binding="{Binding Geschlecht}"/>
+                <DataGridTextColumn Header="Geburtsdatum" Binding="{Binding Geburtsdatum}"/>
+                <DataGridCheckBoxColumn Header="Verheiratet" Binding="{Binding Verheiratet}"/>
+                <DataGridTextColumn Header="Lieblingsfarbe" Binding="{Binding Lieblingsfarbe}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>

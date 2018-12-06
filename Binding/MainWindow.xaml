@@ -1,0 +1,65 @@
+﻿<Window x:Class="Binding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Binding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="403.709" Width="369.139">
+    <!--Durch Bindings können Properties von XAML-Objekten mit anderen XAML-Properties oder Daten verknüpft werden.
+    Bindings werden immer in der Ziel-Property definiert.-->
+    <!--Die Binding-Property ElementName definiert das Quellen-Element in dem aktuellen XAML.Dokument.
+    Path definiert die Quellen-Property des Quellen-Elements-->
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Slider Orientation="Horizontal" Width="250">
+                <Slider.Value>
+                    <!--Mittels der Mode-Property von Bindings kann der Bindungs-Weg definiert werden
+                        Mode=TwoWay stellt eine Bindung in beide Richtungen bereit-->
+                    <!--Mittels der UpdateSourceTrigger-Property kann definiert werden, wann die GUI aktualisiert wird.
+                        UST=LostFocus aktualisiert das Element, wenn der Focus in dem Fenster auf ein anderes Element gelegt wird-->
+                    <Binding ElementName="tbxEins" Path="Text" Mode="TwoWay" UpdateSourceTrigger="LostFocus"/>
+                </Slider.Value>
+            </Slider>
+            <TextBox x:Name="tbxEins" Width="100"/>
+        </StackPanel>
+        <Separator/>
+        <StackPanel Orientation="Horizontal">
+            <Slider Orientation="Horizontal" Width="250">
+                <Slider.Value>
+                    <!--Mode=OneWay stellt die Bindung für die Richtung Quelle->Ziel her-->
+                    <Binding ElementName="tbxZwei" Path="Text" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                </Slider.Value>
+            </Slider>
+            <TextBox x:Name="tbxZwei" Width="100"/>
+        </StackPanel>
+        <Separator/>
+        <StackPanel Orientation="Horizontal">
+            <Slider Orientation="Horizontal" Width="250" TickPlacement="BottomRight" IsSnapToTickEnabled="True">
+                <Slider.Value>
+                    <!--Mode=OneWayToSource stellt die Bindung für die Richtung Ziel->Quelle her-->
+                    <Binding ElementName="tbxDrei" Path="Text" Mode="OneWayToSource" UpdateSourceTrigger="PropertyChanged"/>
+                </Slider.Value>
+            </Slider>
+            <TextBox x:Name="tbxDrei" Width="100"/>
+        </StackPanel>
+        <Separator/>
+        <StackPanel Orientation="Horizontal">
+            <!--Mode=OneTime stellt die Bindung nur für ein einziges Mal her (beim ersten Zeichen des Elements)-->
+            <!--Hier wurde das Binding-Element nicht in eine ausgelagerte Property gelegt, sondern über die Kurschreibweise einer
+                Markup-Extension direkt in den Slider-Tag geschrieben-->
+            <Slider Orientation="Horizontal" Width="250" TickPlacement="BottomRight" IsSnapToTickEnabled="True"
+                    Value="{Binding ElementName=tbxVier, Path=Text, Mode=OneTime, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="tbxVier" Width="100" Text="8"/>
+        </StackPanel>
+        <Separator/>
+        <StackPanel Orientation="Horizontal">
+            <!--UST=Explicit erfordert die Aktualisierung über den CodeBehind und ein Event, bei welchem diese Aktualisierung durchgeführt wird (hier das Click-event des Buttons)-->
+            <Slider Orientation="Horizontal" Width="250" TickPlacement="BottomRight" IsSnapToTickEnabled="True"
+                    Value="{Binding ElementName=tbxFünf, Path=Text, Mode=TwoWay, UpdateSourceTrigger=Explicit}"
+                    x:Name="sldFünf"/>
+            <TextBox x:Name="tbxFünf" Width="100" Text="8"/>
+            <Button x:Name="btnChange" Content="Übernehmen" Click="btnChange_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

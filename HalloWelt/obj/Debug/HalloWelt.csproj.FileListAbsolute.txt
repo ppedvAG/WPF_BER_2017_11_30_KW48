@@ -1,0 +1,15 @@
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\bin\Debug\HalloWelt.exe.config
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\bin\Debug\HalloWelt.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\bin\Debug\HalloWelt.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt.csprojAssemblyReference.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\MainWindow.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\App.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt_MarkupCompile.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt_MarkupCompile.lref
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\MainWindow.baml
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt.g.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt.Properties.Resources.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt.csproj.GenerateResource.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt.csproj.CoreCompileInputs.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\HalloWelt\obj\Debug\HalloWelt.pdb

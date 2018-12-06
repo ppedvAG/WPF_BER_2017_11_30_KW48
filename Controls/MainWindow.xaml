@@ -1,0 +1,79 @@
+﻿<Window x:Class="Controls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="766.084" Width="379.545">
+    <StackPanel Margin="10">
+        <!--Labels besitzen, wie die meisten Controls und alle Container eine Content-Eigenschaft, welche
+        mit weiteren Containern/Controls befüllt werden können (Auch hier darf nur ein Root-Element vohanden sein).-->
+        <Label x:Name="lblAusgabe"
+               Content="Dies ist ein Label" 
+               FontWeight="Bold" 
+               FontSize="16"
+               Background="LightCoral"/>
+        <!--Buttons sind die Standart-Controlls für die einfcahe Interaktion des Benutzers mit dem Programm.
+            Sie besitzen ein Click-Event, welches ausgelöst wird, wenn die User auf den BUtton klickt.
+            An dieses Event können Methoden gehämgt werden.-->
+        <Button Content="Klick Mich"
+                Margin="10"
+                Background="LightGreen"
+                Click="Button_Click"/>
+        <!---Das Image-Objekt wird benutzt um Bilder im Programm zu präsentieren.
+            Die Erscheinungsform des Bildes kann über die Stretch-Eigenschaft angepasst werden.-->
+        <Image Source="C:\Users\kh2\Desktop\Material\ppedv.bmp"
+               Stretch="Uniform"/>
+        <!--Textboxen sind Controls, in welche der User einen String eingeben kann.-->
+        <TextBox Text="Hallo"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 TextWrapping="WrapWithOverflow"
+                 Height="100"/>
+        <!--ItemControls wie ComboBoxen oder ListViews können über die ItemsSource-Property mit Daten 
+        oder in XAML mit Items mit Content-Property bestückt werden-->
+        <ComboBox>
+            <ComboBoxItem Content="Item1"/>
+            <ComboBoxItem Content="Item2"/>
+        </ComboBox>
+        <!--Checkboxen sind die Visualisierung von boolschen Werten. Mittels der Eigenschaft 'IsThreeState'
+        kann ein dritter Zustand ermöglicht werden.-->
+        <CheckBox IsChecked="True"
+                  Content="Hak mich ab" 
+                  IsThreeState="True"/>
+        <!--RadioButtons können einer Group zugeordnet werden, wodurch nur einer der Buttons angewählt sein darf-->
+        <RadioButton GroupName="RadioGroup" 
+                     Content="Wähl Mich!"/>
+        <RadioButton GroupName="RadioGroup" 
+                     Content="Wähl Mich!"/>
+
+        <Slider Orientation="Horizontal"
+                Minimum="0"
+                Maximum="100"
+                Value="50"
+                TickFrequency="10"
+                TickPlacement="BottomRight"
+                IsSnapToTickEnabled="True"/>
+        
+        <ProgressBar Minimum="0"
+                     Maximum="100"
+                     Value="33"
+                     Height="20"
+                     IsIndeterminate="True"/>
+
+        <!--Menüs, wie ein Fenster-Menü (Menu) oder ein Kontext-Menü (ContextMenu) werden mit MenuItems befüllt.
+        Diese können ihrerseits weitere MenuItems aufnehmen, wodurch sich dann Untermenüs bilden-->
+        <Menu>
+            <MenuItem Header="Datei">
+                <MenuItem Header="Speichern">
+                    <MenuItem Header="Speichern unter..." 
+                              Click="MenuItem_Click"/>
+                    <Separator/>
+                    <Button Content="Hallo"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+    </StackPanel>
+</Window>
+s

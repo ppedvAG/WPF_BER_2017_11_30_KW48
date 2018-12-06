@@ -1,0 +1,38 @@
+﻿<!--In dem Haupt-Tag (Window/Page) des XAML-Dokuments müssen die einzelnen Namespaces referenziert werden.
+    Jedem Namespace wird dabei ein Key/Präfix zugeordnet, über welchen diese angesprochen werden-->
+<Window x:Class="HalloWelt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HalloWelt"
+        mc:Ignorable="d"
+        Title="Hallo Welt" Height="224.667" Width="384" ResizeMode="NoResize">
+    <!--In WPF darf jedes Window/jede Page einen Root-Container enthalten, in welchem alle
+        weiteren Container und Controls beinhaltet sind-->
+    <StackPanel x:Name="splMain" Background="LightGreen">
+        <!--Controls, welche eine Content-Eigenschaft besitzen, kann diese zwischen den Tags
+                zugewiesen werden. Dies kann z.B. ein weiterer Container mit Inhalt sein, oder aber auch,
+                wie hier, z.B. ein String-->
+        <TextBox Margin="20"
+                 x:Name="tbxInput"
+                 TextAlignment="Center">Hallo WPF</TextBox>
+        <!--Properties können bei einfacher Belegung direkt im Einleitungstag zugewiesen werden (s.o.)-->
+        <Button Content="Hallo WPF"
+                Margin="20, 10, 5 ,30">
+            <!--Wenn Properties mit komplexen Objekten befüllt werden sollen, muss diese Property
+                ausgelagert werden-->
+            <Button.Background>
+                <!--Button.Background entspricht hier der Background-Property-Variablen des Buttons ->
+                LinearGradiantBrush ist der Aufruf des Konstruktors der LinearGradientBrush-Klasse und weist
+                das neue Objekt der Property zu-->
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="AliceBlue"/>
+                    <GradientStop Offset="1" Color="DarkBlue"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            
+        </Button>
+
+    </StackPanel>
+</Window>

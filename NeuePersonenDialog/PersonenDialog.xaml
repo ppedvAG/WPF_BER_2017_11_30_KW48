@@ -1,0 +1,92 @@
+﻿<Window x:Class="NeuePersonenDialog.PersonenDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NeuePersonenDialog"
+        mc:Ignorable="d"
+        Title="Neue Person" Height="300" Width="280">
+
+    <Window.Background>
+        <LinearGradientBrush>
+            <GradientStop Offset="0" Color="LightYellow"/>
+            <GradientStop Offset="1" Color="Yellow"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Window.Resources>
+        <local:EnumToBoolConverter x:Key="enum2bool"/>
+
+        <ControlTemplate x:Key="ctpErrorTbxDtp">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Border BorderBrush="Red" BorderThickness="1" x:Name="bdrAep" Margin="0,4">
+                    <AdornedElementPlaceholder x:Name="aep"/>
+                </Border>
+                <TextBlock Foreground="Red" Text="!" FontSize="20" VerticalAlignment="Center" Margin="3,0"/>
+                <Popup PlacementTarget="{Binding ElementName=bdrAep}"
+                       IsOpen="{Binding ElementName=aep, Path=AdornedElement.IsKeyboardFocusWithin, Mode=OneWay}"
+                       PopupAnimation="Fade">
+                    <TextBlock Foreground="White" 
+                               Text="{Binding ElementName=aep, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}"
+                               Background="Red"/>
+                </Popup>
+            </StackPanel>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Vorname" Grid.Row="0" Margin="0,4"/>
+        <TextBlock Text="Nachname" Grid.Row="1" Margin="0,4"/>
+        <TextBlock Text="Geschlecht" Grid.Row="2" Margin="0,4"/>
+        <TextBlock Text="Geburtsdatum" Grid.Row="3" Margin="0,4"/>
+        <TextBlock Text="Verheiratet" Grid.Row="4" Margin="0,4"/>
+        <TextBlock Text="Lieblingsfarbe" Grid.Row="5" Margin="0,4,10,4"/>
+
+        <TextBox Grid.Column="1" Grid.Row="0"
+                 Margin="0,4"
+                 Text="{Binding Vorname, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"
+                 Validation.ErrorTemplate="{StaticResource ctpErrorTbxDtp}"/>
+        <TextBox Grid.Column="1" Grid.Row="1"
+                 Margin="0,4"
+                 Text="{Binding Nachname, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"
+                 Validation.ErrorTemplate="{StaticResource ctpErrorTbxDtp}"/>
+        <StackPanel Grid.Column="1" Grid.Row="2"
+                    Margin="0,4">
+            <RadioButton Content="M" GroupName="rbgGender" IsChecked="{Binding Geschlecht, Converter={StaticResource enum2bool} , ConverterParameter={x:Static local:Geschlechter.Männlich}}"/>
+            <RadioButton Content="W" GroupName="rbgGender" IsChecked="{Binding Geschlecht, Converter={StaticResource enum2bool} , ConverterParameter={x:Static local:Geschlechter.Weiblich}}"
+                         Margin="0,4"/>
+            <RadioButton Content="D" GroupName="rbgGender" IsChecked="{Binding Geschlecht, Converter={StaticResource enum2bool} , ConverterParameter={x:Static local:Geschlechter.Divers}}"/>
+        </StackPanel>
+        <DatePicker Grid.Column="1" Grid.Row="3"
+                    SelectedDate="{Binding Geburtsdatum, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"
+                    Validation.ErrorTemplate="{StaticResource ctpErrorTbxDtp}"/>
+        <CheckBox Grid.Column="1" Grid.Row="4" Margin="0,4"
+                  IsChecked="{Binding Verheiratet}"/>
+        <ComboBox Grid.Column="1" Grid.Row="5" Margin="0,4">
+            <ComboBoxItem Content="Rot"/>
+            <ComboBoxItem Content="Blau"/>
+            <ComboBoxItem Content="Grün"/>
+            <ComboBoxItem Content="Gelb"/>
+        </ComboBox>
+
+        <WrapPanel Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,4">
+            <Button Content="OK" Width="80" Margin="2,1" Click="Button_Click"/>
+            <Button Content="Abbruch" Width="80" Margin="2,1" IsCancel="True"/>
+        </WrapPanel>
+
+    </Grid>
+</Window>

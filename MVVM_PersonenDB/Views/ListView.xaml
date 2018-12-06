@@ -1,0 +1,38 @@
+﻿<Window x:Class="MVVM_PersonenDB.Views.ListView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:MVVM_PersonenDB.Views"
+        mc:Ignorable="d"
+        Title="PersonenDatenbank" Height="376.172" Width="417.549"
+        Style="{StaticResource styWnd}">
+    <DockPanel Margin="5">
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="0,5">
+            <Button Content="Neue Person" x:Name="btnNeu"
+                    Command="{Binding NeuePersonCmd}"/>
+            <Button Content="Person ändern" x:Name="btnÄndern" Margin="5,0"
+                    Command="{Binding ÄnderePersonCmd}"
+                    CommandParameter="{Binding ElementName=dgdPersonen, Path=SelectedValue}"/>
+            <Button Content="Person löschen" x:Name="btnLöschen"
+                    Command="{Binding LöschePersonCmd}"
+                    CommandParameter="{Binding ElementName=dgdPersonen, Path=SelectedValue}"/>
+        </WrapPanel>
+        <DataGrid AutoGenerateColumns="False" x:Name="dgdPersonen"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding PersonenListe}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding ÄnderePersonCmd}" 
+                                           CommandParameter="{Binding ElementName=dgdPersonen, Path=SelectedValue}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Vorname" Binding="{Binding Vorname}"/>
+                <DataGridTextColumn Header="Nachname" Binding="{Binding Nachname}"/>
+                <DataGridTextColumn Header="Geburtsdatum" Binding="{Binding Geburtsdatum}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>

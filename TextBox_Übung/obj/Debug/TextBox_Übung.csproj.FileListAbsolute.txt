@@ -1,0 +1,15 @@
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\bin\Debug\TextBox_Übung.exe.config
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\bin\Debug\TextBox_Übung.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\bin\Debug\TextBox_Übung.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\MainWindow.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\App.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung_MarkupCompile.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung_MarkupCompile.lref
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\MainWindow.baml
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung.g.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung.Properties.Resources.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung.csproj.GenerateResource.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung.csproj.CoreCompileInputs.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\TextBox_Übung\obj\Debug\TextBox_Übung.csprojAssemblyReference.cache

@@ -1,0 +1,16 @@
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\bin\Debug\Ressources.exe.config
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\bin\Debug\Ressources.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\bin\Debug\Ressources.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\MainWindow.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\App.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Ressources_MarkupCompile.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Ressources_MarkupCompile.lref
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\App.baml
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Dictionary1.baml
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\MainWindow.baml
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Ressources.g.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Ressources.Properties.Resources.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Resources.csproj.GenerateResource.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Resources.csproj.CoreCompileInputs.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Ressources.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Ressources\obj\Debug\Ressources.pdb

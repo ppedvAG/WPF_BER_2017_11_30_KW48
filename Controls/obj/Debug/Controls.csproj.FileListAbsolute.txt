@@ -1,0 +1,15 @@
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\bin\Debug\Controls.exe.config
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\bin\Debug\Controls.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\bin\Debug\Controls.pdb
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls.csprojAssemblyReference.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\MainWindow.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\App.g.cs
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls_MarkupCompile.lref
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\MainWindow.baml
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls.g.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls.csproj.GenerateResource.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls.csproj.CoreCompileInputs.cache
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls.exe
+C:\Users\kh2\source\repos\WPF_Kurs_Berlin_2018\Controls\obj\Debug\Controls.pdb
